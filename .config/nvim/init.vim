@@ -319,6 +319,12 @@ let g:NERDToggleCheckAllLines = 1
 " ===
 " zf : create a fold in selected lines
 " zd : delete a fold at cursor
+" zo : open doc fold
+" zc : close doc fold
+let g:SimpylFold_docstring_preview = 0 "自动预览折叠文档内容
+let g:SimpylFold_fold_docstring = 1 "自动折叠文档内容
+let g:SimpylFold_fold_import = 1 "自动折叠import
+let g:SimpylFold_fold_blank = 0 "折叠空白
 
 
 
