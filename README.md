@@ -1,6 +1,6 @@
 # fishDotFiles
 
-To save my own config files.
+To save my own config files. Work in Ubuntu22 well~
 
 Make some soft links to these files when sitting in a new room.
 
