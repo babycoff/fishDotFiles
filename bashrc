@@ -161,7 +161,7 @@ alias v2='sudo v2raya'
 # fzf
 # export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
 export FZF_DEFAULT_OPTS="--layout=reverse --preview-window=down --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
-alias fvim='nvim $(fzf)'
+alias fvim='vim $(fzf)'
 alias fcd='cd $(find * -type d | fzf)'
 # alias fra='ranger $(find * -type d | fzf)'
 # alias fcheckout='git checkout $(git branch -r | fzf)'
