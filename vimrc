@@ -19,6 +19,10 @@ set incsearch " 输入搜索内容时就显示搜索结果
 set hlsearch " 搜索时高亮显示被找到的文本
 set ignorecase smartcase " 搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
 
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved
+set signcolumn=yes
+
 
 " search down into subfolders
 set path+=**
@@ -228,14 +232,6 @@ nmap T :TagbarToggle<CR>
 
 " ---------------------------
 
-" bufferline: display buffer info in status
-" git clone https://github.com/bling/vim-bufferline.git --depth 1
-
-
-
-
-" ---------------------------
-
 " coc.nvim: for auto completion
 " git clone --branch release https://github.com/neoclide/coc.nvim.git --depth=1
 
@@ -247,10 +243,6 @@ set nowritebackup
 " Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
 " delays and poor user experience
 set updatetime=300
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved
-set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate
 " NOTE: There's always complete item selected by default, you may want to enable
