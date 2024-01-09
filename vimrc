@@ -67,20 +67,29 @@ set matchtime=5
 set pastetoggle=<F5>
 
 "tab
-nmap tn :tabnew<CR>
-nmap tc :tabclose<CR>
+nmap <leader>tn :tabnew<CR>
+nmap <leader>tc :tabclose<CR>
+
+"use buffer is convenient when buffer is displayed by airline
+nmap <leader>bp :bprevious<CR>
+nmap <leader>bn :bnext<CR>
+nmap <leader>bd :bdelete<CR>
+nmap <leader>ba :badd<space>
+nmap <leader>bf :bfirst<space>
+nmap <leader>bl :blast<space>
+
 
 " 方便移动
-nmap J 5j
-nmap K 5k
-nmap W 5w
-nmap B 5b
-nmap E 5e
-xmap J 5j
-xmap K 5k
-xmap W 5w
-xmap B 5b
-xmap E 5e
+"nmap J 5j
+"nmap K 5k
+"nmap W 5w
+"nmap B 5b
+"nmap E 5e
+"xmap J 5j
+"xmap K 5k
+"xmap W 5w
+"xmap B 5b
+"xmap E 5e
 
 "netrw
 "let g:netrw_liststyle = 3
@@ -188,7 +197,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " tagbar: display tag structure of file
 " git clone https://github.com/preservim/tagbar.git --depth 1
-nmap <leader>t :TagbarToggle<CR>
+nmap T :TagbarToggle<CR>
 
 
 
@@ -283,13 +292,13 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
-nnoremap <silent> K :call ShowDocumentation()<CR>
+nnoremap <silent> <leader>k :call ShowDocumentation()<CR>
 
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
-    call feedkeys('K', 'in')
+    call feedkeys(' k', 'in')
   endif
 endfunction
 
