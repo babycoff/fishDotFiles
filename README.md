@@ -21,8 +21,9 @@ Make some soft links to these files when sitting in a new room.
 - `nload`: for network rate monitoring, use `sudo nload -m`.
 - `tmux`
     - make soft link for config: `ln -s ~/fishDotFiles/.tmux.conf ~/.tmux.conf`.
-- `ranger`: use `ranger --copy-config=all` to get default config files.
-    - make hard link for config: `ln ~/fishDotFiles/ranger/rc.conf ~/.config/ranger/.rc.conf`.
+- `ranger`:
+    - make soft link for config: `ln -s ~/fishDotFiles/ranger/ ~/.config/ranger`.
+    - use `ranger --copy-config=all` to get default config files.
 - `fzf` for file searching.
 - `lazygit`(snap `lazygit-gm`): for operation of git.
 - `neovim`(snap)
