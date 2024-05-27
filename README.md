@@ -4,7 +4,7 @@ To save my own config files. Work in Ubuntu22 well~ Clone it to:
 
 ```
 cd ~ && \
-git clone https://github.com/lfishRhungry/fishDotFiles.git
+git clone https://github.com/sharkocha/fishDotFiles.git
 ```
 
 Make some soft links to these files when sitting in a new room.
