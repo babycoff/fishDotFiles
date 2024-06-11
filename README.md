@@ -34,4 +34,10 @@ Make some soft links to these files when sitting in a new room.
 - `lazygit`(snap `lazygit-gm`): for operation of git.
 - `neovim`(snap)
     - make soft link for main config: `ln -s ~/fishDotFiles/nvim ~/.config/nvim`.
+- `perf`
+    - `sudo apt install linux-tools-common linux-tools-generic linux-cloud-tools-generic`.
+- `speedtest-cli`
+    - `sudo apt-get install curl`
+    - `curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash`
+    - `sudo apt-get install speedtest`
 - Copy some useful config from bashrc file.
