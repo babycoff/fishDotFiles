@@ -20,6 +20,7 @@ Make some soft links to these files when sitting in a new room.
 - `git`
 - `build-essentials`
 - `golang`(snap for latest)
+- `rust`: `sudo apt install rust-all`
 - `miniconda`: virtual env for python, [see this](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html).
 - `openssh-server`: for SSH serving or connecting
     - use `sudo systemctl start ssh`(enable) to start serving, edit `/etc/ssh/sshd_config` for port changing.
@@ -33,14 +34,16 @@ Make some soft links to these files when sitting in a new room.
 - `fzf` for file searching.
 - `lazygit`(snap `lazygit-gm`): for operation of git.
 - `neovim`(snap)
-    - make soft link for main config: `ln -s ~/fishDotFiles/nvim ~/.config/nvim`.
+    - use lazyvim:
+    - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
+    - `rm -rf ~/.config/nvim/.git`
 - `perf`
     - `sudo apt install linux-tools-common`.
     - And follow the command.
 - `speedtest-cli`
-    - `sudo apt-get install curl`
+    - `sudo apt install curl`
     - `curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash`
-    - `sudo apt-get install speedtest`
+    - `sudo apt install speedtest`
 - `valgrind`
-    - `sudo apt-get install valgrind`
+    - `sudo apt install valgrind`
 - Copy some useful config from bashrc file.
