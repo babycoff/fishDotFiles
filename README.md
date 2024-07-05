@@ -23,7 +23,7 @@ Make some soft links to these files when sitting in a new room.
 - `rust`: `sudo apt install rust-all`
 - `miniconda`: virtual env for python, [see this](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html).
 - `openssh-server`: for SSH serving or connecting
-    - use `sudo systemctl start ssh`(enable) to start serving, edit `/etc/ssh/sshd_config` for port changing.
+    - use `sudo systemctl start ssh`(enable) to start serving, edit `/etc/ssh/sshd_config` and reboot for SSH serving port changing.
 - `htop` : better top.
 - `nload`: for network rate monitoring, use `sudo nload -m`.
 - `tmux`
