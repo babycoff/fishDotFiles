@@ -20,7 +20,8 @@ Make some soft links to these files when sitting in a new room.
 - `git`
 - `build-essentials`
 - `golang`(snap for latest)
-- `rust`: `sudo apt install rust-all`
+- `rust`: do not use apt to install but install `rustup` to manage rust version
+    - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 - `miniconda`: virtual env for python, [see this](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html).
 - `openssh-server`: for SSH serving or connecting
     - use `sudo systemctl start ssh`(enable) to start serving, edit `/etc/ssh/sshd_config` and reboot for SSH serving port changing.
