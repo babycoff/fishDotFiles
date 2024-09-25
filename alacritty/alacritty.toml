@@ -1,0 +1,16 @@
+import = [
+    "theme.toml",
+]
+
+live_config_reload = true
+
+[window]
+decorations = "none"
+startup_mode = "Maximized"
+opacity = 0.8
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"

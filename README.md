@@ -17,6 +17,8 @@ Make some soft links to these files when sitting in a new room.
     - Install font in font manager.
 - `kitty`: GPU friendly terminal emulator.
     - make soft link for config: `ln -s ~/fishDotFiles/kitty/ ~/.config/kitty`.
+- `alacritty`: Another GPU friendly terminal emulator.
+    - make soft link for config: `ln -s ~/fishDotFiles/alacritty/ ~/.config/alacritty`.
 - `git`
 - `build-essentials`
 - `golang`(snap for latest)
