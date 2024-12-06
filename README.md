@@ -49,4 +49,10 @@ Make some soft links to these files when sitting in a new room.
     - `sudo apt install speedtest`
 - `valgrind`
     - `sudo apt install valgrind`
+- `docker`
+    - `sudo snap install docker`
+- `dotnet`
+    - `sudo snap install dotnet-sdk --classic`
+- `oh-my-posh`
+    - catppuccin theme
 - Copy some useful config from bashrc file.
