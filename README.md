@@ -55,4 +55,5 @@ Make some soft links to these files when sitting in a new room.
     - `sudo snap install dotnet-sdk --classic`
 - `oh-my-posh`
     - catppuccin theme
+    - add line to bashrc: `eval "$(oh-my-posh init bash --config your_theme.omp.json)"`
 - Copy some useful config from bashrc file.
