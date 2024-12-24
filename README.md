@@ -53,4 +53,8 @@ Make some soft links to these files when sitting in a new room.
     - `sudo snap install docker`
 - `dotnet`
     - `sudo snap install dotnet-sdk --classic`
+- `yazi`
+    - build from source: https://github.com/sxyazi/yazi.git
+    - make soft link for config: `ln -s ~/fishDotFiles/yazi/ ~/.config/`.
+    - add conf from bashrc
 - Copy some useful config from bashrc file.
