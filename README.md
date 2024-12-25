@@ -57,4 +57,25 @@ Make some soft links to these files when sitting in a new room.
     - build from source: https://github.com/sxyazi/yazi.git
     - make soft link for config: `ln -s ~/fishDotFiles/yazi/ ~/.config/`.
     - add conf from bashrc
+- `slides`
+    - `sudo snap install slides`
+    - present markdown in slides in terminal.
+- `mdp`
+    - `sudo apt install mdp`
+    - present markdown in slides in terminal(just for linux).
+- `glow`
+    - `sudo snap install glow`
+    - render markdown in terminal
+- `termshark`
+    - `sudo apt install termshark`
+    - wireshark in terminal
+- `nexttrace`
+    - `git clone https://github.com/nxtrace/NTrace-core.git`
+    - user-friend tracerouter
+- `doggo`
+    - `git clone https://github.com/mr-karan/doggo.git`
+    - user-friend dns client
+- `nali`
+    - `git clone https://github.com/zu1k/nali.git`
+    - user-friend IP query tool
 - Copy some useful config from bashrc file.
