@@ -78,4 +78,13 @@ Make some soft links to these files when sitting in a new room.
 - `nali`
     - `git clone https://github.com/zu1k/nali.git`
     - user-friend IP query tool
+- `typora`
+    - `sudo snap install typora`
+    - elegent markdown editor
+- `WPS`
+    - download deb file and install with apt.
+- `WeChat`
+    - download deb file and install with apt.
+- `QQ`
+    - download deb file and install with apt.
 - Copy some useful config from bashrc file.
