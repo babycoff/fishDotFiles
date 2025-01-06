@@ -11,6 +11,14 @@ git clone https://github.com/sharkocha/fishDotFiles.git
 
 可以根据需求创建配置软连接，bashrc中的配置可以参考需要的部分。
 
+## Install restricted addons
+
+```
+sudo apt install ubuntu-restricted-addons ubuntu-restricted-extras -y
+```
+
+include some decoder and microsoft fonts.
+
 ## 工具和依赖的安装
 
 - JetBrainsMono Nerd Font: 我喜欢的等宽字体，适用于终端和编程。
