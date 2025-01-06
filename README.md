@@ -88,3 +88,51 @@ Make some soft links to these files when sitting in a new room.
 - `QQ`
     - download deb file and install with apt.
 - Copy some useful config from bashrc file.
+
+## Font Settings
+
+### Install new fonts
+
+Copy `.ttf` file to `/usr/share/fonts/` or its subdirectories and do:
+
+```
+cd /usr/share/fonts/
+mkfontscale
+mkfontdir
+fc-cache
+```
+
+If you don't have those commands:
+
+```
+sudo apt-get -y install fontconfig xfonts-utils
+```
+
+NOTE: we can copy fonts from `C:\Windows\Fonts` of a Windows host.
+
+### Weired Chinese fonts
+
+Open file:
+
+```
+sudo vim /etc/fonts/conf.d/64-language-selector-cjk-prefer.conf
+```
+
+And adjust SC font to top of the list:
+
+![](./Imgs/cjd_font.png)
+
+Then update the font cache:
+
+```
+fc-cache -fv
+```
+
+Check if we can get "Noto Sans CJK SC" "Regular"
+
+```
+fc-match -s | grep 'Noto Sans CJK'
+```
+
+Reboot.
+
