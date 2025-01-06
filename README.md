@@ -1,18 +1,20 @@
 # fishDotFiles
 
-To save my own config files. Work in Ubuntu22 well~ Clone it to:
+保存一些在Ubuntu22/24下的配置，青春过半，原理Arch。
+
+## 一些配置文件
 
 ```
 cd ~ && \
 git clone https://github.com/sharkocha/fishDotFiles.git
 ```
 
-Make some soft links to these files when sitting in a new room.
+可以根据需求创建配置软连接，bashrc中的配置可以参考需要的部分。
 
-## Usage tools (Dependencies and Installation)
+## 工具和依赖的安装
 
-- JetBrainsMono Nerd Font: a good font with glyphs for coding and terminal.
-    - Download it [here](https://www.nerdfonts.com/font-downloads).
+- JetBrainsMono Nerd Font: 我喜欢的等宽字体，适用于终端和编程。
+    - 下载地址 [here](https://www.nerdfonts.com/font-downloads).
     - Install font manager for Ubuntu: `sudo apt install font-manager`.
     - Install font in font manager.
 - `kitty`: GPU friendly terminal emulator.
@@ -22,7 +24,7 @@ Make some soft links to these files when sitting in a new room.
 - `git`
 - `build-essentials`
 - `golang`(snap for latest)
-- `rust`: do not use apt to install but install `rustup` to manage rust version
+- `rust`: 不要使用apt安装，否则nvim或vscode写rust时会有一些问题。 使用`rustup`安装和升级版本。
     - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 - `miniconda`: virtual env for python, [see this](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html).
 - `openssh-server`: for SSH serving or connecting
@@ -31,13 +33,15 @@ Make some soft links to these files when sitting in a new room.
 - `nload`: for network rate monitoring, use `sudo nload -m`.
 - `tmux`
     - make soft link for config: `ln -s ~/fishDotFiles/.tmux.conf ~/.tmux.conf`.
+    - 终端复用
 - `ranger`:
     - make soft link for config: `ln -s ~/fishDotFiles/ranger/ ~/.config/ranger`.
     - use `ranger --copy-config=all` to get default config files.
+    - python编写的终端文件浏览器
 - `fzf` for file searching.
 - `lazygit`(snap `lazygit-gm`): for operation of git.
 - `neovim`(snap)
-    - use lazyvim:
+    - 直接使用lazyvim懒人配置
     - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
     - `rm -rf ~/.config/nvim/.git`
 - `perf`
@@ -47,8 +51,10 @@ Make some soft links to these files when sitting in a new room.
     - `sudo apt install curl`
     - `curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash`
     - `sudo apt install speedtest`
+    - 方便测试当前上网质量
 - `valgrind`
     - `sudo apt install valgrind`
+    - 代码测试
 - `docker`
     - `sudo snap install docker`
 - `dotnet`
@@ -57,12 +63,14 @@ Make some soft links to these files when sitting in a new room.
     - build from source: https://github.com/sxyazi/yazi.git
     - make soft link for config: `ln -s ~/fishDotFiles/yazi/ ~/.config/`.
     - add conf from bashrc
+    - rust编写的终端文件浏览器
 - `slides`
     - `sudo snap install slides`
     - present markdown in slides in terminal.
+    - 以幻灯片形式在终端显示markdown文件内容，go语言编写的程序，显示效果一般，不能居中，但是跨平台，有需要可以在windows使用。
 - `mdp`
     - `sudo apt install mdp`
-    - present markdown in slides in terminal(just for linux).
+    - 以幻灯片形式在终端显示markdown文件内容，C语言编写的程序，可以居中，仅限于Linux，只支持部分markdown标记。
 - `glow`
     - `sudo snap install glow`
     - render markdown in terminal
@@ -82,14 +90,19 @@ Make some soft links to these files when sitting in a new room.
     - `sudo snap install typora`
     - elegent markdown editor
 - `WPS`
-    - download deb file and install with apt.
+    - `sudo snap install wps-2019-snap`
 - `WeChat`
     - download deb file and install with apt.
 - `QQ`
     - download deb file and install with apt.
-- Copy some useful config from bashrc file.
+- latex环境
+    - `sudo apt-get install texlive-full`
+    - `sudo apt install latex-cjk-all`
+    - `sudo apt install texstudio`
+    - pdflatex可能不支持默认的中文fandol字体，可以选择修改编译器为XeLaTex。或者，如果有Windows下的字体，可以显示指定字体族
+    - `\documentclass[fontset=windows]`
 
-## Font Settings
+## 字体设置
 
 ### Install new fonts
 
@@ -110,7 +123,9 @@ sudo apt-get -y install fontconfig xfonts-utils
 
 NOTE: we can copy fonts from `C:\Windows\Fonts` of a Windows host.
 
-### Weired Chinese fonts
+### 中文字体怪异
+
+主要是因为对于CJK类的字体，很多Linux系统不是优先显示简体中文的中文符号，因此需要更改配置文件来调整默认顺序。
 
 Open file:
 
@@ -118,7 +133,7 @@ Open file:
 sudo vim /etc/fonts/conf.d/64-language-selector-cjk-prefer.conf
 ```
 
-And adjust SC font to top of the list:
+把SC调整到前面
 
 ![](./Imgs/cjd_font.png)
 
