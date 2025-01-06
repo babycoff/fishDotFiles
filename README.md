@@ -1,6 +1,6 @@
 # fishDotFiles
 
-保存一些在Ubuntu22/24下的配置，青春过半，原理Arch。
+保存一些在Ubuntu22/24下的配置，青春过半，远离Arch。
 
 ## 一些配置文件
 
@@ -157,5 +157,5 @@ Check if we can get "Noto Sans CJK SC" "Regular"
 fc-match -s | grep 'Noto Sans CJK'
 ```
 
-Reboot.
+重启
 
