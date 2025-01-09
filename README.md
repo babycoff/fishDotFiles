@@ -109,6 +109,9 @@ include some decoder and microsoft fonts.
     - `sudo apt install texstudio`
     - pdflatex可能不支持默认的中文fandol字体，可以选择修改编译器为XeLaTex。或者，如果有Windows下的字体，可以显示指定字体族
     - `\documentclass[fontset=windows]`
+- `vlc`
+    - `sudo apt install vlc`
+    - video player
 
 ## 字体设置
 
