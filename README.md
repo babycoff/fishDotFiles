@@ -65,6 +65,9 @@ include some decoder and microsoft fonts.
     - 代码测试
 - `docker`
     - `sudo snap install docker`
+    - proxy speed up conf: `/var/snap/docker/current/config/daemon.json`
+    - restart docker `sudo snap restart docker`
+    - or `sudo systemctl restart snap.docker.docker.dockerd.service`
 - `dotnet`
     - `sudo snap install dotnet-sdk --classic`
 - `yazi`
