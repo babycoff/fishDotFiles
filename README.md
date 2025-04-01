@@ -47,7 +47,6 @@ include some decoder and microsoft fonts.
     - use `ranger --copy-config=all` to get default config files.
     - python编写的终端文件浏览器
 - `fzf` for file searching.
-- `lazygit`(snap `lazygit-gm`): for operation of git.
 - `neovim`(snap)
     - 直接使用lazyvim懒人配置
     - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
@@ -65,9 +64,13 @@ include some decoder and microsoft fonts.
     - 代码测试
 - `docker`
     - `sudo snap install docker`
-    - proxy speed up conf: `/var/snap/docker/current/config/daemon.json`
-    - restart docker `sudo snap restart docker`
+    - 在snap版配置文件中设置代理加速: `/var/snap/docker/current/config/daemon.json`
+    - 重启snap版docker `sudo snap restart docker`
     - or `sudo systemctl restart snap.docker.docker.dockerd.service`
+- `lazydocker`
+    - github库克隆并在bash绑定命令
+- `lazygit`
+    - github库克隆并在bash绑定命令
 - `dotnet`
     - `sudo snap install dotnet-sdk --classic`
 - `yazi`
