@@ -87,28 +87,28 @@ include some decoder and microsoft fonts.
     - 以幻灯片形式在终端显示markdown文件内容，C语言编写的程序，可以居中，仅限于Linux，只支持部分markdown标记。
 - `glow`
     - `sudo snap install glow`
-    - render markdown in terminal
+    - 终端渲染markdown
 - `termshark`
     - `sudo apt install termshark`
-    - wireshark in terminal
+    - 终端版wireshark
 - `nexttrace`
     - `git clone https://github.com/nxtrace/NTrace-core.git`
-    - user-friend tracerouter
+    - 友好tracerouter
 - `doggo`
     - `git clone https://github.com/mr-karan/doggo.git`
-    - user-friend dns client
+    - 友好DNS查询客户端
 - `nali`
     - `git clone https://github.com/zu1k/nali.git`
-    - user-friend IP query tool
+    - 友好IP查询工具（本地版）
 - `typora`
     - `sudo snap install typora`
-    - elegent markdown editor
+    - 优雅markdown编辑器
 - `WPS`
     - `sudo snap install wps-2019-snap`
 - `WeChat`
-    - download deb file and install with apt.
+    - 官网下载deb包安装
 - `QQ`
-    - download deb file and install with apt.
+    - 官网下载deb包安装
 - latex环境
     - `sudo apt-get install texlive-full`
     - `sudo apt install latex-cjk-all`
@@ -118,6 +118,8 @@ include some decoder and microsoft fonts.
 - `vlc`
     - `sudo apt install vlc`
     - video player
+- obsidian
+    - 官网下载deb包安装，不要使用snap版本，不然会有笔记图片无法加载等问题
 
 ## 字体设置
 
