@@ -87,7 +87,7 @@ include some decoder and microsoft fonts.
     - 以幻灯片形式在终端显示markdown文件内容，C语言编写的程序，可以居中，仅限于Linux，只支持部分markdown标记。
 - `glow`
     - `sudo snap install glow`
-    - 终端渲染markdown
+    - 终端渲染markdown in terminal
 - `termshark`
     - `sudo apt install termshark`
     - 终端版wireshark
