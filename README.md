@@ -29,6 +29,8 @@ include some decoder and microsoft fonts.
     - make soft link for config: `ln -s ~/fishDotFiles/kitty/ ~/.config/kitty`.
 - `alacritty`: Another GPU friendly terminal emulator.
     - make soft link for config: `ln -s ~/fishDotFiles/alacritty/ ~/.config/alacritty`.
+- vscode: 官网下载deb包安装，安装时可同意添加microsoft库到apt，后续通过apt即可更新scode.
+    - snap中安装的vscode是阉割版本，无法输入中文
 - `git`
 - `build-essentials`
 - `golang`(snap for latest)
@@ -104,7 +106,11 @@ include some decoder and microsoft fonts.
     - `sudo snap install typora`
     - 优雅markdown编辑器
 - `WPS`
-    - `sudo snap install wps-2019-snap`
+    - 官网下载deb包安装
+    - 设置语言为中文
+      - `cd /opt/kingsoft/wps-office/office6/mui`
+      - `sudo mv en_US en_US-bak`
+      - `sudo cp -r zh_CN en_US`
 - `WeChat`
     - 官网下载deb包安装
 - `QQ`
