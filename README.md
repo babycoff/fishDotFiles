@@ -126,6 +126,9 @@ include some decoder and microsoft fonts.
     - video player
 - obsidian
     - 官网下载deb包安装，不要使用snap版本，不然会有笔记图片无法加载等问题
+- VirtualBox虚拟机软件
+    - sudo apt install virtualbox virtualbox-ext-pack
+    - sudo usermod -aG vboxusers yourusername
 
 ## 字体设置
 
