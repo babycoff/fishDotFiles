@@ -127,8 +127,12 @@ include some decoder and microsoft fonts.
 - obsidian
     - 官网下载deb包安装，不要使用snap版本，不然会有笔记图片无法加载等问题
 - VirtualBox虚拟机软件
-    - sudo apt install virtualbox virtualbox-ext-pack
+    - sudo apt install virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
     - sudo usermod -aG vboxusers yourusername
+    - 安装的windows需要激活？使用[脚本](https://github.com/massgravel/Microsoft-Activation-Scripts)
+      - 在powershell中执行：`irm https://get.activated.win | iex`
+    - 调整虚拟机磁盘大小：在“工具”、“介质”中选择对应虚拟磁盘，右键属性设置大小，而后在虚拟机中添加相应空间。
+      - 虚拟机为windows时，可使用DiskGenius方便扩容。
 
 ## 字体设置
 
