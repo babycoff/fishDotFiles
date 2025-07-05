@@ -133,6 +133,19 @@ include some decoder and microsoft fonts.
       - 在powershell中执行：`irm https://get.activated.win | iex`
     - 调整虚拟机磁盘大小：在“工具”、“介质”中选择对应虚拟磁盘，右键属性设置大小，而后在虚拟机中添加相应空间。
       - 虚拟机为windows时，可使用DiskGenius方便扩容。
+- JetBrains全家桶：都用snap安装
+- 安装多版本PHP
+  - `sudo apt install software-properties-common -y`
+  - `sudo add-apt-repository ppa:ondrej/php -y`
+  - `sudo apt update`
+  - `sudo apt upgrade`
+  - 安装指定版本（PHP 8.3、8.2、8.1、8.0、7.4、7.3、7.2、7.1、7.1 或 5.6）
+    - `sudo apt install php8.3`
+  - 安装扩展（`sudo apt install phpX.X-extension_name`）如：
+    - `sudo apt install php8.3-mysql`
+    - `sudo apt install php7.4-mysql`
+  - 一般来说，很多场景需要安装对应的cgi（如配置phpstorm解释器）
+    - `sudo apt install php7.4-cgi`
 
 ## 字体设置
 
