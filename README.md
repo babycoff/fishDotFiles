@@ -108,9 +108,9 @@ include some decoder and microsoft fonts.
 - `WPS`
     - 官网下载deb包安装
     - 设置语言为中文
-      - `cd /opt/kingsoft/wps-office/office6/mui`
-      - `sudo mv en_US en_US-bak`
-      - `sudo cp -r zh_CN en_US`
+        - `cd /opt/kingsoft/wps-office/office6/mui`
+        - `sudo mv en_US en_US-bak`
+        - `sudo cp -r zh_CN en_US`
 - `WeChat`
     - 官网下载deb包安装
 - `QQ`
@@ -130,22 +130,26 @@ include some decoder and microsoft fonts.
     - sudo apt install virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
     - sudo usermod -aG vboxusers yourusername
     - 安装的windows需要激活？使用[脚本](https://github.com/massgravel/Microsoft-Activation-Scripts)
-      - 在powershell中执行：`irm https://get.activated.win | iex`
+        - 在powershell中执行：`irm https://get.activated.win | iex`
     - 调整虚拟机磁盘大小：在“工具”、“介质”中选择对应虚拟磁盘，右键属性设置大小，而后在虚拟机中添加相应空间。
-      - 虚拟机为windows时，可使用DiskGenius方便扩容。
+        - 虚拟机为windows时，可使用DiskGenius方便扩容。
 - JetBrains全家桶：都用snap安装
 - 安装多版本PHP
-  - `sudo apt install software-properties-common -y`
-  - `sudo add-apt-repository ppa:ondrej/php -y`
-  - `sudo apt update`
-  - `sudo apt upgrade`
-  - 安装指定版本（PHP 8.3、8.2、8.1、8.0、7.4、7.3、7.2、7.1、7.1 或 5.6）
-    - `sudo apt install php8.3`
-  - 安装扩展（`sudo apt install phpX.X-extension_name`）如：
-    - `sudo apt install php8.3-mysql`
-    - `sudo apt install php7.4-mysql`
-  - 一般来说，很多场景需要安装对应的cgi（如配置phpstorm解释器）
-    - `sudo apt install php7.4-cgi`
+    - `sudo apt install software-properties-common -y`
+    - `sudo add-apt-repository ppa:ondrej/php -y`
+    - `sudo apt update`
+    - `sudo apt upgrade`
+    - 安装指定版本（PHP 8.3、8.2、8.1、8.0、7.4、7.3、7.2、7.1、7.1 或 5.6）
+        - `sudo apt install php8.3`
+    - 安装扩展（`sudo apt install phpX.X-extension_name`）如：
+        - `sudo apt install php8.3-mysql`
+        - `sudo apt install php7.4-mysql`
+    - 一般来说，很多场景需要安装对应的cgi（如配置phpstorm解释器）
+        - `sudo apt install php7.4-cgi`
+    - 还有操作字符串的mbstring扩展
+        - `sudo apt install php7.4-mbstring`
+- Oklular多类型文档查看：snap安装最新版
+- kchmviewer：apt安装，用于查看chm文档
 
 ## 字体设置
 
