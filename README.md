@@ -150,6 +150,11 @@ include some decoder and microsoft fonts.
         - `sudo apt install php7.4-mbstring`
 - Oklular多类型文档查看：snap安装最新版
 - kchmviewer：apt安装，用于查看chm文档
+- utools：官网下载deb包安装，但是当前不支持ubuntu wayland截图，无所谓
+    - 通过Startup Applications设置开机自启动。
+- snipaste：官网下载Appimage包
+    - 安装依赖：`sudo apt install libfuse2`
+    - 软件内设置开机自启动，其实效果还是体现在Startup Applications。
 
 ## 字体设置
 
