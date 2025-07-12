@@ -133,6 +133,8 @@ include some decoder and microsoft fonts.
         - 在powershell中执行：`irm https://get.activated.win | iex`
     - 调整虚拟机磁盘大小：在“工具”、“介质”中选择对应虚拟磁盘，右键属性设置大小，而后在虚拟机中添加相应空间。
         - 虚拟机为windows时，可使用DiskGenius方便扩容。
+    - 如果ubuntu22虚拟机无法安装vbox扩展，可能需要先安装依赖：
+        - `build-essential, dkms, linux-headers-$(uname -r)`
 - JetBrains全家桶：都用snap安装
 - 安装多版本PHP
     - `sudo apt install software-properties-common -y`
@@ -155,6 +157,7 @@ include some decoder and microsoft fonts.
 - snipaste：官网下载Appimage包
     - 安装依赖：`sudo apt install libfuse2`
     - 软件内设置开机自启动，其实效果还是体现在Startup Applications。
+- GHex：GUI二进制编辑器，使用apt安装
 
 ## 字体设置
 
