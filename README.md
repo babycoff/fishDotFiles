@@ -76,7 +76,7 @@ include some decoder and microsoft fonts.
 - `dotnet`
     - `sudo snap install dotnet-sdk --classic`
 - `yazi`
-    - build from source: https://github.com/sxyazi/yazi.git
+    - snap
     - make soft link for config: `ln -s ~/fishDotFiles/yazi/ ~/.config/`.
     - add conf from bashrc
     - rust编写的终端文件浏览器
@@ -158,6 +158,7 @@ include some decoder and microsoft fonts.
     - 安装依赖：`sudo apt install libfuse2`
     - 软件内设置开机自启动，其实效果还是体现在Startup Applications。
 - GHex：GUI二进制编辑器，使用apt安装
+- ToDesk: 远程连接软件，官网下载deb包
 
 ## 字体设置
 
