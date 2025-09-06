@@ -116,9 +116,9 @@ include some decoder and microsoft fonts.
 - `QQ`
     - 官网下载deb包安装
 - latex环境
-    - `sudo apt-get install texlive-full`
-    - `sudo apt install latex-cjk-all`
-    - `sudo apt install texstudio`
+    - `sudo add-apt-repository ppa:sunderme/texstudio`
+    - `sudo apt update`
+    - `sudo apt upgrade`
     - pdflatex可能不支持默认的中文fandol字体，可以选择修改编译器为XeLaTex。或者，如果有Windows下的字体，可以显示指定字体族
     - `\documentclass[fontset=windows]`
 - `vlc`
