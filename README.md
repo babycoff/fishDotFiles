@@ -160,6 +160,7 @@ include some decoder and microsoft fonts.
 - GHex：GUI二进制编辑器，使用apt安装
 - ToDesk: 远程连接软件，官网下载deb包
 - pdfarranger: PDF页面拼接，snap安装
+- nodejs: snap安装
 
 ## 字体设置
 
