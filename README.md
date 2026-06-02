@@ -66,9 +66,32 @@ include some decoder and microsoft fonts.
     - 代码测试
 - `docker`
     - `sudo snap install docker`
-    - 在snap版配置文件中设置代理加速: `/var/snap/docker/current/config/daemon.json`
-    - 重启snap版docker `sudo snap restart docker`
-    - or `sudo systemctl restart snap.docker.docker.dockerd.service`
+      - 在snap版配置文件中设置代理加速: `/var/snap/docker/current/config/daemon.json`
+      - 重启snap版docker `sudo snap restart docker`
+      - or `sudo systemctl restart snap.docker.docker.dockerd.service`
+    - 使用apt安装（推荐）
+      - 参考[官网教程](https://docs.docker.top/engine/install/ubuntu/index.htm#install-using-the-repository)
+      - 设置代理：编辑`/etc/docker/daemon.json`，添加：
+        ```
+        {
+          "proxies": {
+            "http-proxy": "socks5://127.0.0.1:7890",
+            "https-proxy": "socks5://127.0.0.1:7890",
+            "no-proxy": "localhost,127.0.0.1,.docker.internal"
+          }
+        }
+        ```
+      - 也可以选择国内加速：
+        ```
+        {
+          "registry-mirrors": [
+            "https://docker.mirrors.ustc.edu.cn",
+            "https://hub-mirror.c.163.com",
+            "https://mirror.ccs.tencentyun.com"
+          ]
+        }
+        ```
+      - 安装`docker-desktop`，参考[官网指南](https://docs.docker.top/desktop/setup/install/linux/ubuntu/index.htm)
 - `lazydocker`
     - github库克隆并在bash绑定命令
 - `lazygit`
